@@ -1,0 +1,27 @@
+{
+  "name": "dsh-eyecare-bg",
+  "version": "3.0.0",
+  "description": "把 DSH Web / 桌面版的背景换成护眼绿：宿主侧注入样式覆盖 31 个背景 token（画布/卡片/侧栏/输入框/代码块…），并把自己的设置分区注册进 DSH 设置页（settings.section 槽位）。不改字体字号布局，零依赖。",
+  "keywords": ["dsh", "dsh-plugin", "deepseek-harness", "theme", "background", "eyecare", "护眼绿", "settings"],
+  "license": "MIT",
+  "type": "module",
+  "main": "./host.js",
+  "exports": {
+    ".": "./host.js",
+    "./client": "./client.js",
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./package.json": "./package.json"
+  },
+  "files": ["host.js", "client.js", "cordis.patch.yml", "README.md"],
+  "engines": {
+    "node": ">=20"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web"
+    }
+  }
+}

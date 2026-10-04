@@ -1,0 +1,5 @@
+# dsh bundle patch：把本插件插入 profile 的 loader 层栈。
+# 浏览器半边不需要任何接线——本插件只有宿主半边。
+- insert:
+    - id: eyecare-bg
+      name: 'dsh-eyecare-bg'

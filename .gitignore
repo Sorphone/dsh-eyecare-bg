@@ -1,0 +1,10 @@
+# 安装时留下的本机备份（含目标 profile 的 package.json / pnpm-lock.yaml），不该进仓库
+.install-backup/
+
+# 编辑器与系统杂物
+.vscode/
+.idea/
+Thumbs.db
+desktop.ini
+*.log
+*.tmp
